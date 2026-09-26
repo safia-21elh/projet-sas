@@ -10,6 +10,18 @@ function modifierpartipolitique(cin , nouveaupartipilitique) {
         }
     }
 } 
-modifierpartipolitique("CD554322" , "PI");
+
+function modifierage(cin , nouvelage) {
+    if(nouvelage < 25) {
+      return false;
+    } 
+for(let i = 0; i < candidats.length; i++) {
+    if(candidats[i].cin === cin){
+        candidats[i].age = nouvelage;
+    }
+  }
+}
+
+modifierage("MN432157" , 32);
 console.log(candidats) ;
 
