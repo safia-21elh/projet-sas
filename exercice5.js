@@ -3,25 +3,13 @@ const candidats = [
     {cin : "EF567891" , nom : "ALAMI" , prenom : "AHMED" , partipolitique : "PAM" , age : 40 , electeurs : []},
     {cin : "MN432157" , nom : "BENNANI" , prenom : "SARA" , partipolitique : "RNI" , age : 30 , electeurs : []}
 ];
-function modifierpartipolitique(cin , nouveaupartipilitique) {
+function modifierpartipolitique(cin , nouveaupartipolitique) {
     for(let i = 0; i < candidats.length; i++) { 
         if(candidats[i].cin === cin){
-            candidats[i].partipolitique = nouveaupartipilitique;
+            candidats[i].partipolitique = nouveaupartipolitique;
         }
     }
 } 
-
-function modifierage(cin , nouvelage) {
-    if(nouvelage < 25) {
-      return false;
-    } 
-for(let i = 0; i < candidats.length; i++) {
-    if(candidats[i].cin === cin){
-        candidats[i].age = nouvelage;
-    }
-  }
-}
-
-modifierage("MN432157" , 32);
+modifierpartipolitique("CD554322" ,"PI");
 console.log(candidats) ;
 
